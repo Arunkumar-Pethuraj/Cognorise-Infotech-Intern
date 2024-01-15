@@ -7,3 +7,11 @@
 https://github.com/Arunkumar-Pethuraj/Cognorise-Infotech-Intern/assets/153414462/28ca74fe-74a3-4101-b872-cf1c59dce5f2
 
 <br>
+
+## Task 2 - CountDown Timer :
+
+![Screenshot (533)](https://github.com/Arunkumar-Pethuraj/Cognorise-Infotech-Intern/assets/153414462/608da981-d81d-4178-a760-9d9c1dcd1923)
+
+https://github.com/Arunkumar-Pethuraj/Cognorise-Infotech-Intern/assets/153414462/7a060b21-8559-4fc2-9182-18d4b1a17ed8
+
+<br>
