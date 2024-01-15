@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(https://th.bing.com/th/id/OIP.HmCe80lMyxkuvZKofJOokQHaE8?rs=1&pid=ImgDetMain) fixed no-repeat;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(253, 253, 253, 0.25);
+
+}
+
+.box {
+  width: 500px;
+  background: transparent;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  color: rgb(0, 0, 0, 0.7);
+  font-weight: bold;
+  font-size: 30px;
+  padding: 20px 0;
+}
+
+.content {
+  padding: 0 35px;
+
+}
+
+.input {
+  background: transparent;
+  border-radius: 12px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+
+.input label {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.input input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.inputW {
+  background: transparent;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.inputW label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.inputW input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: ghostwhite;
+  width: 50%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.inputH {
+  background: transparent;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.inputH label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.inputH input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: ghostwhite;
+  width: 50%;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+button.calculate {
+  cursor: pointer;
+  color: #fff;
+  background: rgb(97, 138, 254, 1);
+  font-size: 18px;
+  border-radius: 25px;
+  padding: 10px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  transition: all 0.5s;
+}
+
+button.calculate:hover {
+  background: #0044ff;
+}
+
+.result {
+  padding: 10px 20px;
+}
+
+.result p {
+  font-weight: 500;
+  font-size: 25px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.result #result {
+  font-size: 35px;
+  font-weight: 700;
+  color: #4f7df9;
+  display: inline-block;
+  padding: 7px 10px;
+  margin-bottom: 15px;
+}
+
+#comment {
+  color: #4f7df9;
+  font-weight: 800;
+}
+
+.comment {
+  display: none;
+  border: dashed 1px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px 15px
+}
+
+.footer-text {
+  text-decoration: none;
+  color: rgba(40, 40, 40, 0.8);
+  font-weight: 200;
+  font-size: 14px;
+  transition: all 0.5;
+}
+
+.footer-text:hover {
+  color: rgba(40, 40, 40, 1);
+}
+
+.gender {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.gender .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 7px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.gender .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.gender .container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+.gender .container input:checked~.checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.gender .container input:checked~.checkmark:after {
+  display: block;
+}
+
+.gender .container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: ghostwhite;
+}
+
+.containerHW {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 250px;
+}
+
+.modal-content {
+  background-color: transparent;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: #393c76 -1px 2px 2px 1px;
+}
+
+#modalText {
+  padding-top: 8px;
+  padding-right: 5px;
+  font-size: 18px;
+  color: rgb(24, 23, 23);
+}
+
+.modal-wrong {
+  border: 2px solid red;
+}
+
+.modal-correct {
+  border: 2px solid green;
+}
+
+
+@media (max-width: 600px) {
+  .box {
+    width: 350px;
+  }
+
+  .input label {
+    font-size: 15px;
+  }
+
+  .inputH label,
+  .inputW label {
+    font-size: 12px;
+  }
+
+  .input input,
+  .inputH input,
+  .inputW input {
+    font-size: 20px;
+  }
+
+  .modal-content {
+    width: 350px;
+  }
+}
