@@ -15,3 +15,9 @@ https://github.com/Arunkumar-Pethuraj/Cognorise-Infotech-Intern/assets/153414462
 https://github.com/Arunkumar-Pethuraj/Cognorise-Infotech-Intern/assets/153414462/7a060b21-8559-4fc2-9182-18d4b1a17ed8
 
 <br>
+
+## Task 3 - Currency Converter :
+
+![Screenshot (532)](https://github.com/Arunkumar-Pethuraj/Cognorise-Infotech-Intern/assets/153414462/97ecf877-dac2-4723-904b-7adff1efca6e)
+
+https://github.com/Arunkumar-Pethuraj/Cognorise-Infotech-Intern/assets/153414462/ea7ba9e3-73cc-484f-9007-abca38802d88
